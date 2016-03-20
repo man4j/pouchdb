@@ -513,8 +513,9 @@ adapters.forEach(function (adapter) {
     // We're testing some very local-specific functionality
     //
 
-
-    if (autoCompactionAdapters.indexOf(adapter) === -1) {
+    // idb-next does not handle attachments the same way as the
+    // other adapters
+    if (true) { // autoCompactionAdapters.indexOf(adapter) === -1) {
       return;
     }
 
